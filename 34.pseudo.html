@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* using after selector */
+      p::after {
+        content: "after";
+        color: red;
+      }
+
+      /* using before selector */
+      h1::before {
+        content: "before";
+        color: red;
+      }
+
+      /* using first-letter selector */
+      h2::first-letter {
+        font-size: 40px;
+        color: red;
+      }
+
+      /* using first-line selector */
+      h3::first-line {
+        background-color: yellow;
+        text-decoration: underline;
+      }
+
+      /* using selection selector */
+      h4::selection{
+        background-color: yellow;
+        color: red;
+      }
+
+      input::placeholder{
+        background-color: yellow;
+        color: red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>pseudo element selector</p>
+    <h1>pseudo element selector</h1>
+    <h2>pseudo element selector</h2>
+    <h3>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+      quos necessitatibus nisi esse excepturi ab, assumenda libero placeat
+      laudantium odio adipisci nemo quas, fuga quaerat ullam corrupti error
+      molestiae ipsam?
+    </h3>
+    <h4>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+      blanditiis in porro ipsam, ducimus, asperiores quos eaque dolor iusto
+      aspernatur dolores eos labore distinctio possimus laborum esse hic et
+      nesciunt?
+    </h4>
+    <input type="text" placeholder="enter your name">
+  </body>
+</html>

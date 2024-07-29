@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 5s;
+            text-align: center;
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: reverse; */
+            /* animation direction:alternate; */
+            /* animation-direction: alternate-reverse; */
+            animation-fill-mode: forwards;
+        }
+
+        /* @keyframes example{
+            from {background-color: red;}
+            to {background-color: yellow;}
+        } */
+
+        /* @keyframes example{
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color:blue;}
+            100% {background-color: green;}
+        } */
+
+        @keyframes example{
+            0% {background-color: gray; left:0px; top:0px;}
+            25% {background-color: yellow; left:200px; top:0px;}
+            50% {background-color:blue; left:200px; top:200px;}
+            75% {background-color: green; left:0px; top: 200px;}
+            100% {background-color: pink; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>khushal</div>
+    <input type="tel" id="phone" name="phone" required placeholder="phone number">  <br><br>
+    <button>ohk</button>
+</body>
+</html>
